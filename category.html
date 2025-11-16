@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="category-page-title">Category - News & Blogs</title>
+    <meta name="description" id="category-description" content="Explore the latest articles in this category on News & Blogs. Stay updated with technology, sports, health, and travel news.">
+    <meta name="keywords" id="category-keywords" content="news, blogs, category, technology, sports, health, travel, articles">
+    <meta name="author" content="News & Blogs">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" id="category-canonical" href="https://newsblogs.com/category.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" id="category-og-url" content="https://newsblogs.com/category.html">
+    <meta property="og:title" id="category-og-title" content="Category - News & Blogs">
+    <meta property="og:description" id="category-og-description" content="Explore the latest articles in this category on News & Blogs. Stay updated with technology, sports, health, and travel news.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" id="category-twitter-url" content="https://newsblogs.com/category.html">
+    <meta property="twitter:title" id="category-twitter-title" content="Category - News & Blogs">
+    <meta property="twitter:description" id="category-twitter-description" content="Explore the latest articles in this category on News & Blogs. Stay updated with technology, sports, health, and travel news.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">News & Blogs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="category.html?cat=technology">Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="category.html?cat=sports">Sports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="category.html?cat=health">Health</a></li>
+                    <li class="nav-item"><a class="nav-link" href="category.html?cat=travel">Travel</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4" id="category-title">Category</h1>
+        <div class="row" id="articles">
+            <!-- Articles will be loaded here -->
+        </div>
+
+    </div>
+
+    <!-- Modal for article preview -->
+    <div class="modal fade" id="articleModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <!-- Modal content -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="scroll-top" class="btn btn-secondary">↑</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
